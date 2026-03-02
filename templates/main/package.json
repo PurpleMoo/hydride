@@ -15,6 +15,7 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
+    "skills:sync": "npx giget@latest gh:guarana-studio/hydride/skills skills",
     "postinstall": "sv-router",
     "prepare": "husky"
   },

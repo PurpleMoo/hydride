@@ -9,7 +9,9 @@
   "scripts": {
     "lint": "oxlint",
     "fmt": "oxfmt",
-    "prepare": "husky"
+    "prepare": "husky",
+    "docs:dev": "bunx docsome dev DOCS.md",
+    "docs:build": "bunx docsome build DOCS.md"
   },
   "devDependencies": {
     "husky": "^9.1.7",

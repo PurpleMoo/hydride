@@ -16,3 +16,35 @@ A starter meant for building mini SaaS apps.
 - **KV Storage**: Use [Nitro powered KV Storage](https://v3.nitro.build/docs/storage) to store information in memory, or set it to use Redis.
 - **Elegant styling with modes**: The template has preconfigured [Tailwind](https://tailwindcss.com/), [Basecoat UI](https://basecoatui.com/), [Lucide Icons](https://lucide.dev/), and Geist font.
 - **AGENTS.md and skills/**: Use this template with AI Agents. We provide guides that help omit common problems and optimize token efficiency.
+
+## New Project
+
+### Prerequisite
+
+- Node.js v20+
+- Code editor
+- Terminal
+
+### Clone template
+
+```sh
+npx giget@latest gh:guarana-studio/hydride/templates/main <project-name>
+# or Bun
+bunx giget@latest gh:guarana-studio/hydride/templates/main <project-name>
+```
+
+### Install dependencies
+
+```sh
+npm i
+# or Bun
+bun install
+```
+
+### Development server
+
+```sh
+npm run dev
+# or Bun
+bun run dev
+```
