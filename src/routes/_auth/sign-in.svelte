@@ -56,7 +56,7 @@
                     category: "error",
                 });
             }
-            navigate("/");
+            navigate("/dashboard");
         },
     });
 
@@ -70,7 +70,7 @@
                 category: "error",
             });
         }
-        navigate("/");
+        navigate("/dashboard");
     }
 </script>
 

@@ -46,7 +46,7 @@ export function setupTheme() {
   };
 
   document.addEventListener("basecoat:theme", (event) => {
-    const mode = event.detail?.mode;
+    const mode = (event as CustomEvent<{ mode: string }>).detail?.mode;
     apply(
       mode === "dark"
         ? true

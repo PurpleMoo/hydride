@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Footer from "$lib/components/footer.svelte";
     import TopBar from "$lib/components/top-bar.svelte";
     import type { Snippet } from "svelte";
 
@@ -10,4 +11,5 @@
     <div class="flex flex-col container mx-auto p-2 flex-1">
         {@render children()}
     </div>
+    <Footer />
 </div>

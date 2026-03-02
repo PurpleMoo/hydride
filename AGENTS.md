@@ -74,6 +74,10 @@ Hydride is a hybrid [Svelte](https://svelte.dev/) framework based on [Vite](http
 
 ## Framework features
 
+### Nitro server
+
+Nitro serves a single application that has both server based API routes and Svelte SPA frontend.
+
 - **Hybrid mode**: Nitro serves a single application that has both server based API routes and Svelte SPA frontend.
 - **File System Routing**: Build your app with API routes and Svelte pages in `src/routes`.
 - **Type-safe backend - frontend communication**: The template ships with [ORPC](https://orpc.dev/) that provides a type-safe way to communicate between backend and frontend.

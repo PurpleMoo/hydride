@@ -2,6 +2,7 @@
 .qoder
 .env
 local.db
+.output
 
 # Logs
 logs

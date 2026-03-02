@@ -1,47 +1,31 @@
 <script>
     import { authClient } from "$lib/auth-client";
+    import { CONFIG } from "$lib/const";
     import { client } from "$lib/rpc";
-    import { navigate, p } from "$router";
+    import { isActive, navigate, p } from "$router";
     import { UserIcon } from "@lucide/svelte";
 
+    const isHome = $derived(isActive("/"));
     const me = await client.users.me().catch(() => undefined);
-
-    async function signOut() {
-        await authClient.signOut();
-        navigate("/");
-    }
 </script>
 
-<header class="border-b">
+<header
+    class="border-b sticky top-0 inset-x-0 bg-background/90 backdrop-blur-lg z-10"
+>
     <div class="container mx-auto p-2 flex justify-between items-center">
-        <a href={p("/")} class="btn-ghost">Hydride</a>
+        <a href={p(isHome || !me ? "/" : "/dashboard")} class="btn-ghost">
+            <img src="/logo.svg" class="size-6 dark:invert" alt="Logo" />
+            <span>{CONFIG.APP_NAME}</span>
+        </a>
         {#if me}
-            <div class="dropdown-menu">
-                <button
-                    type="button"
-                    aria-haspopup="menu"
-                    aria-expanded="false"
-                    class="btn-outline"
-                >
+            {#if isHome}
+                <a href={p("/dashboard")} class="btn">Go to Dashboard</a>
+            {:else}
+                <a href={p("/settings")} class="btn-outline">
                     <UserIcon />
                     {me.email}
-                </button>
-                <div
-                    data-popover
-                    aria-hidden="true"
-                    class="min-w-56"
-                    data-align="end"
-                >
-                    <div role="menu">
-                        <a href={p("/settings")} role="menuitem">Settings</a>
-                        <button
-                            role="menuitem"
-                            onclick={signOut}
-                            class="text-destructive">Sign Out</button
-                        >
-                    </div>
-                </div>
-            </div>
+                </a>
+            {/if}
         {:else}
             <a href={p("/sign-in")} class="btn">Sign In</a>
         {/if}
