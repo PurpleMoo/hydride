@@ -19,7 +19,7 @@
     </div>
 {/snippet}
 
-<div class="container mx-auto p-2 flex-1 flex flex-col max-w-320 my-40">
+<div class="container mx-auto p-2 flex-1 flex flex-col max-w-7xl my-40">
     <div class="flex flex-col items-center justify-center gap-8">
         <a class="btn-sm-secondary">
             <span>Important announcement goes here</span>

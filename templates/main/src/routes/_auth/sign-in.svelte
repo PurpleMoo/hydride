@@ -37,6 +37,7 @@
                     },
                 );
                 if (error) {
+                    console.error(error)
                     return toast({
                         title: "Error sending OTP",
                         category: "error",
@@ -51,6 +52,7 @@
                 otp: data.otp,
             });
             if (error) {
+                console.error(error)
                 return toast({
                     title: "Error sending OTP",
                     category: "error",
@@ -65,6 +67,7 @@
             autoFill: false,
         });
         if (error) {
+            console.error(error)
             return toast({
                 title: "Error signing in with passkey",
                 category: "error",

@@ -13,10 +13,15 @@
     class="border-b sticky top-0 inset-x-0 bg-background/90 backdrop-blur-lg z-10"
 >
     <div class="container mx-auto p-2 flex justify-between items-center">
-        <a href={p(isHome || !me ? "/" : "/dashboard")} class="btn-ghost">
-            <img src="/logo.svg" class="size-6 dark:invert" alt="Logo" />
-            <span>{CONFIG.APP_NAME}</span>
-        </a>
+        <div class="flex items-center gap-2">
+            <a href={p(isHome || !me ? "/" : "/dashboard")} class="btn-ghost">
+                <img src="/logo.svg" class="size-6 dark:invert" alt="Logo" />
+                <span>{CONFIG.APP_NAME}</span>
+            </a>
+            {#if me.role === "admin"}
+                <a href={p("/admin")} class="btn-ghost">Admin Panel</a>
+            {/if}
+        </div>
         {#if me}
             {#if isHome}
                 <a href={p("/dashboard")} class="btn">Go to Dashboard</a>

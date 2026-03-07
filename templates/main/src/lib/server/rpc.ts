@@ -1,3 +1,4 @@
+import "$lib/server/server-only";
 import { auth } from "$lib/server/auth";
 import { os } from "@orpc/server";
 import type { useStorage } from "nitro/storage";

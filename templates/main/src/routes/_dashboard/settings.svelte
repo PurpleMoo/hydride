@@ -13,6 +13,7 @@
             authenticatorAttachment: "platform",
         });
         if (error) {
+            console.error(error)
             return toast({ category: "error", title: "Failed to add passkey" });
         }
         window.location.reload();
@@ -32,6 +33,7 @@
             id,
         });
         if (error) {
+            console.error(error)
             return toast({
                 category: "error",
                 title: "Failed to delete passkey",
@@ -42,7 +44,7 @@
 </script>
 
 <div class="flex-1 flex flex-col justify-center items-center">
-    <div class="card max-w-128 w-full">
+    <div class="card max-w-lg w-full">
         <header>
             <h2 class="font-semibold text-lg">Settings</h2>
             <p>Manage your profile and account</p>
